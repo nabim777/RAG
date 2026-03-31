@@ -138,6 +138,8 @@ Agenda
 
 ### Making a traditional Rag
 
+First we will how we can convert to data structure. for that foloow the steps:
+
 **Step 1**: Go to vs code
 
 **Step 2**: Go to one specific folder like `rag` and Initialize particular workspace with this command
@@ -171,15 +173,33 @@ pymupdf
 uv add -r requirements.txt
 ```
 
-**step 6**: Create folders
+**step 6**: Create folders named `data` and `notebook`
 
-```zshh
+```zsh
 mkdir data notebook
 ```
 
 **Step 7**: In order along with the jupiter notebooks
 
-```
+```zsh
 uv add ipykernel
 ```
 
+**step 8**: Then choose kernal as `.env python`
+
+**step 9**: Create a file in folder `notebook` named as `document.ipynb`
+
+**step 10**: Then do the code as in [file](../notebook/document.ipynb)
+
+By the end of this file you will know how to structure the data i.e `Document Structure`
+
+
+### Next is how we can do the chunking:
+
+[chunking the pdf files](../notebook/pdf_loader.ipynb)
+
+
+### Embedding
+You can use any model
+for this we are using the open source models
+going to do the modular coding
