@@ -203,3 +203,21 @@ By the end of this file you will know how to structure the data i.e `Document St
 You can use any model
 for this we are using the open source models
 going to do the modular coding
+- for that we need to install these module so put that in the `requirement.txt`
+
+```
+sentence-transformers # available in hugging face
+faiss-cpu # vectore store
+chromadb # vectore store
+```
+
+- then  do
+
+```zsh
+uv add -r requirement.txt
+```
+
+> note: for this it will take too much time for the transformer
+> refrences of sentence-transformer
+
+[Embedding for the file](../notebook/pdf_loader.ipynb)

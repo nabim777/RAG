@@ -6,5 +6,7 @@ pymupdf
 
 # for embedding
 sentence-transformers # available in hugging face
-faiss # vectore store
+
+# for vector store
+faiss-cpu # vectore store
 chromadb # vectore store
