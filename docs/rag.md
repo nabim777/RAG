@@ -1,4 +1,4 @@
-## Crash course for RAG(Retrieval Augmented Generation)
+## RAG(Retrieval Augmented Generation)
 
 Will be discuss about the RAG compeletely from scratch where we Will be talking about the entire pipeline fom data injection to retriveal pipleline to output generation.
 How to use LLM models,
@@ -24,7 +24,16 @@ The system first searches for relevant information from external sources like:
 Then it feeds that information into an LLM (like ChatGPT), which uses it to generate a better, more grounded response.
 
 ### Normal LLM
-![](./image/1withoutRAG.drawio.png)
+![Normal LLM](./image/1withoutRAG.drawio.png)
+
+
+## LLM with RAG
+
+![LLM with RAG](./image/2LLmwithRAG.drawio.png)
+
+> describe yourself
+
+## Diff of LLMs with fine tuning
 
 with finetuning data(training the data), it will cost hight and will got some disadvantages:
 - hallucinating
@@ -46,9 +55,19 @@ instead
 - During the exam, you give them a book (data)
 - They look into it and answer
 
-## LLM with RAG
 
-![](./image/2LLmwithRAG.drawio.png)
+
+
+### Structure of RAG
+
+![Structure with RAG](./image/3structure.drawio.png)
+
+## Agenda
+
+1. Document Structure
+2. Complete Rag Pipeline 
+    - Data ingestion pipeline
+    - Query ingestion pipeline
 
 Here one method in used which is **data ingestion pipeline**. 
 There will try do the **data ingestion pipeline**. 
@@ -75,6 +94,7 @@ At the end of the **data ingestion pipeline** you will be able to store the data
 The query is given to the vector db then from that get promt + context.
 then it passed to the LLM
 for example:
+
 **HR RAG**
 Step 1: USer Query 
 
@@ -110,26 +130,15 @@ The leave policy allows employees 20 paid leave days per year, including 10 sick
 
 This is an Traditional Rag
 
+
+> Rag based apps is Percexity
+
 ### Why RAG is useful:
 ✅ More accurate answers
 ✅ Uses real-time or private data
 ✅ Reduces hallucinations (made-up info)
 ✅ No need to retrain the whole model
 
-
-> Rag based apps is Percexity
-
-
-## Structure of the RAG
-
-![](./image/3structure.drawio.png)
-
-Agenda
-
-1. Document Structure
-2. Complete Rag Pipeline 
-    - Data ingestion pipeline
-    - Query ingestion pipeline
 
 ### Data ingestion pipeline
 
@@ -142,13 +151,14 @@ First we will how we can convert to data structure. for that foloow the steps:
 
 **Step 1**: Go to vs code
 
-**Step 2**: Go to one specific folder like `rag` and Initialize particular workspace with this command
+**Step 2**: Go to one specific folder like `rag` and Initialize particular workspace with uv command
+
+> If you don't know about or not installed uv you can see this [link](./uv.md)
 
 ```zsh
 uv init
 ```
 
-> If you don't know about uv you can see this [link](./uv.md)
 
 **Step 3**: Create an virtual env  and activate it
 ```zsh
