@@ -48,3 +48,11 @@ source ~/.zshrc
 ```zsh
 uv --version
 ```
+
+### Work in specific version of python
+> for specific version of python we can do
+```
+uv python install 3.13
+uv venv --python 3.13
+uv run python --version
+```
