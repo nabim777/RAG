@@ -210,12 +210,17 @@ By the end of this file you will know how to structure the data i.e `Document St
 
 
 ### Embedding
+Actually embedding means the transforming the plain data in the digit number so that it can be store in the daytabse and
+later on we can do similarity search and other calculation on palin text.
+
+In digit format the text are stored in the vector databases.
+
 You can use any model
 for this we are using the open source models
 going to do the modular coding
 - for that we need to install these module so put that in the `requirement.txt`
 
-```
+```bash
 sentence-transformers # available in hugging face
 faiss-cpu # vectore store
 chromadb # vectore store
@@ -231,3 +236,8 @@ uv add -r requirement.txt
 > refrences of sentence-transformer
 
 [Embedding for the file](../notebook/pdf_loader.ipynb)
+
+
+### RAGRetriever
+It works as translator(i.e embedding the query) whatever the query it will pass to the vectorstore and retrive(return) the certain the output based on the query.
+It will return the list of results
