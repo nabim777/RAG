@@ -26,6 +26,11 @@ uv pip install requests
 Create and manage virtual environments
 ```
 
+Add the dependencies
+```bash
+uv add -r requirements.txt
+```
+
 Sync dependencies:
 
 ```zsh
