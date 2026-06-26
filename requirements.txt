@@ -10,3 +10,11 @@ sentence-transformers # available in hugging face
 # for vector store
 faiss-cpu # vectore store
 chromadb # vectore store
+
+
+langchain-groq # llm models
+python-dotenv # just for python env
+
+
+#for pdf
+unstructured
